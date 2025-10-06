@@ -1,29 +1,22 @@
 🏥 Hospital Automation Database Design
 
-This repository contains the ER diagram and relational schema design for a hospital automation prototype.
-
 ## 📘 Entities
-- *Doctor*
-- *Patient*
-- *Polyclinic*
-- *Laboratory*
-- *Test (Tahlil)*
-- *Nurse*
-- *Service*
+- *Doktor*
+- *Hasta*
+- *Poliklinik*
+- *Labaratuvar*
+- *Tahlil*
+- *Hemsire*
+- *Servis*
 
 ## 🔗 Relationships
-- Polyclinic → Doctor (1:N)
-- Patient ↔ Polyclinic (N:M)
-- Doctor ↔ Test (N:M)
-- Test → Laboratory (1:N)
-- Nurse → Service (1:N)
-- Service → Polyclinic (1:N)
-
-## 📁 Files
-- hospital.drawio — ER Diagram file
-- hospital.mwb — MySQL Workbench model
-- hospital.sql — SQL table definitions
-
+- Poliklinik → Doktor (1:N)
+- Hasta ↔ Poliklinik (N:M)
+- Doktor ↔ Tahlil (N:M)
+- Tahlil → Labaratuvar (1:N)
+- Hemsire → Servis (1:N)
+- Servis → Poliklinik (1:N)
+  
 ---
 
 👤 Created by: Avaz Gurbanli
